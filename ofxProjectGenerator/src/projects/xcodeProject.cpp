@@ -753,7 +753,14 @@ void xcodeProject::addSrc(std::string srcFile, std::string folder, SrcType type)
 			addToBuild	= false;
 			addToBuildResource = true;
 			addToResources = true;
-		}else if( target == "ios" ){
+		}
+        else if(ext == ".metal"){
+            fileKind = "file.metal";
+            addToBuild    = true;
+            addToBuildResource = true;
+            addToResources = true;
+        }
+        else if( target == "ios" ){
 			fileKind = "file";
 			addToBuild	= false;
 			addToResources = true;

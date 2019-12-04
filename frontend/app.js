@@ -1164,7 +1164,7 @@ function launchInIDE(){
     var project = {};
     project['projectName'] = $("#projectName").val();
     project['projectPath'] = $("#projectPath").val();
-    project['platform'] = platform;
+    project['platform'] = platform == 'ios' ? 'osx' : platform;
     project['ofPath'] = $("#ofPath").val();
 
     ipc.send('launchProjectinIDE', project );

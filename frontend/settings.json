@@ -1,7 +1,7 @@
 {
 	"advancedMode": false,
 	"defaultOfPath": "../",
-	"defaultPlatform": "osx",
+	"defaultPlatform": "ios",
 	"defaultRelativeProjectPath": "apps/myApps",
 	"showConsole": false,
 	"showDeveloperTools": false,
